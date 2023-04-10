@@ -58,11 +58,5 @@ def classify(message):
 def start(message):
     bot.send_message(message.chat.id, "Olá, para classificar a sua planilha digite classificar")
 
-@app.route("/classificar")
-def classificar():
-  sheet.append_row(["Licitações classificadas!])
-  return "Planilha escrita!"
-
-
 
 bot.polling()
